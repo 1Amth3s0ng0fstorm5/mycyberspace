@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>the dashboard</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="styles\style.css">
+  <!--this is the image ripository used for all web images "Font Awesome cdn repository"-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!--this is the about text thread plus its image-->
+  <div id="dashboard">
+    <div class="container">
+      <nav>
+        <img src="styles\Images\hz-university-of-applied-sciences.png" class="logo">
+        <ul>
+          <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+          <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+          <li><a id="active-page" href="http://127.0.0.1:5500/dashboard.html">Dashboard</a></li>
+          <li><a href="http://127.0.0.1:5500/Portfolio.html">Portfolio</a></li>
+          <li><a href="http://127.0.0.1:5500/FAQ&Contact.html">FAQ&Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="row">
+        <div class="dashboard-col-1">
+
+        </div>
+        <div class="dashboard-col-2">
+          <h1 class="sub-title"><span>dashboard</span></h1>
+          <p class="paragraph">
+            <br>in the dashboard an explanation of the website structure along with an image in order to inform
+            on the basic process.<br><br>
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('website')">the website</p>
+            <p class="tab-links" onclick="opentab('course')">the course</p>
+            <p class="tab-links" onclick="opentab('progress')">the progress</p>
+          </div>
+          <div class="tab-contents active-tab" id="website">
+            <ul>
+              <li><span>how this page is setup(note that portfolio is the blog and contact is Q&A plus
+                  email)</span><br><br>
+                <img src="styles/Images/setup.png">
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="course">
+            <ul>
+              <li><!--<span>this shows the course setup</span><br>-->
+                <table id="table">
+                  <tr>
+                    <th>Quarter</th>
+                    <th>Course</th>
+                    <th>EC Amount</th>
+                    <th>Exam Type</th>
+                    <th>Weight %</th>
+                  </tr>
+                  <!---quater 1 data----->
+                  <tr>
+                    <td rowspan="3">1</td>
+                    <td>Program & Career Oriantation</td>
+                    <td>2.5</td>
+                    <td>Interview</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Computer Science Basics</td>
+                    <td>5</td>
+                    <td>Written Exam</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Programming Basics</td>
+                    <td>5</td>
+                    <td>Case Study Exam</td>
+                    <td>100</td>
+                  </tr>
+                  <!----quarter 2 data------>
+                  <tr>
+                    <td rowspan="2">2</td>
+                    <td rowspan="2">Object Oriented Programming</td>
+                    <td rowspan="2">10</td>
+                    <td>Group Assignment</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Case Study Exam</td>
+                    <td>50</td>
+                  </tr>
+                  <!--quarter 3 data-->
+                  <tr>
+                    <td rowspan="4">3</td>
+                    <td rowspan="4">Framework Project 1</td>
+                    <td rowspan="4">10</td>
+                    <td>Case Study Exam</td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Database Exam</td>
+                    <td>12.5</td>
+                  </tr>
+                  <tr>
+                    <td>Group Presentation</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>Group Portfolio</td>
+                    <td>12.5</td>
+                  </tr>
+                  <!--quarter 4 data-->
+                  <tr>
+                    <td rowspan="3">4</td>
+                    <td rowspan="3">Framework Project 2</td>
+                    <td rowspan="3">10</td>
+                    <td>Final Delivery Portfolio</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>Report</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td>IT Development portfolio</td>
+                    <td>50</td>
+                  </tr>
+                  <!--sub quarter data-->
+                  <tr>
+                    <td>3&4</td>
+                    <td>Business IT Colsuntancy basics</td>
+                    <td>2.5</td>
+                    <td>Video</td>
+                    <td>100</td>
+                  </tr>
+                  <!--courses that span all blocks-->
+                  <tr>
+                    <td rowspan="2">1 to 4</td>
+                    <td>Personal Profesionnal Development</td>
+                    <td>12.5</td>
+                    <td>Interview</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>IT Personality</td>
+                    <td>5</td>
+                    <td>4 portfolios</td>
+                    <td>25 per portfolio</td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="progress">
+            <ul>
+              <li><span>how grades are processed in terms of EC's</span><br><br>
+                if a student gets a grade of 45 to 59 they will pass the course and graduate the first year.<br><br>
+                if the student gets a perfect 60 they get their propeduitic diploma which shows that
+                they passed everything in the first go.<br><br>
+                if they get below 45 then the student will fail the course, unless extrenuating circumstances prove the
+                a retake
+                is required for said student which allows them to retake the year.
+            </ul>
+          </div>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--this is the basic script that makes the buttons work inside this page-->
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+
+</body>
+
+</html>

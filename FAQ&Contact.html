@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>about Greg</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="styles\style.css">
+  <!--this is the image ripository used for all web images "Font Awesome cdn repository"-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!--this is the about text thread plus its image-->
+  <div id="FAQ">
+    <div class="container">
+      <nav>
+        <img src="styles\Images\hz-university-of-applied-sciences.png" class="logo">
+        <ul>
+          <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+          <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+          <li><a href="http://127.0.0.1:5500/dashboard.html">Dashboard</a></li>
+          <li><a href="http://127.0.0.1:5500/Portfolio.html">Portfolio</a></li>
+          <li><a href="http://127.0.0.1:5500/FAQ&Contact.html" id="active-page">FAQ&Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="row">
+        <div class="about-col-1">
+          <!--the contact data for HTML-->
+          <div id="Contact">
+            <div class="container">
+              <div class="row">
+                <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><span><i class="fa-solid fa-inbox"></i></span> djferalwrath@gmail.com</p>
+                  <p><span><i class="fa-solid fa-mobile-screen"></i></span> 0634602484</p>
+                  <div class="social-icons">
+                    <a href="https://www.youtube.com/@projectfw2692" id="button1"><i class="fa-brands fa-square-youtube"></i></a>   
+                    <a href="https://www.twitch.tv/projectfw_gaming"id="button2"><i class="fa-brands fa-twitch"></i></a>
+                  </div>
+                </div>
+                <div class="contact-right">
+                  <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--this is all the data pertaining to the red box and the code that makes the buttons work-->
+        <div class="about-col-2">
+          <h1 class="sub-title"><span>FAQ & Contact</span></h1>
+          
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('question1')">Question 1</p>
+            <p class="tab-links" onclick="opentab('question2')">Question 2</p>
+            <p class="tab-links" onclick="opentab('question3')">Question 3</p>
+            <p class="tab-links" onclick="opentab('question4')">Question 4</p>
+            <p class="tab-links" onclick="opentab('question5')">Question 5</p>
+          </div>
+          <div class="tab-contents active-tab" id="question1">
+            <ul>
+              <li><span>How can I print a document from my laptop at HZ?</span><br><br>
+                Go to <a href="https://hz.mynetpay.nl/Login">here.</a><br>
+                Then log into you HZ Account.<br>
+                Upload your chosen file to the website. <br><br>
+                <span>NOTE</span> you need money on your HZ Pass.<br><br>
+                For more questions go <a href="https://hzuniversity.topdesk.net/">here.</a>
+                </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="question2">
+            <ul>
+              <li><span>How can I order something off of the HZ Webshop?</span><br><br>
+                first goto the <a href="https://webshop.hz.nl/">HZ Webshop.</a><br>
+                Then log in.<br>Then search for your desired product.<br>
+                Click "add to shopping cart".<br>Click "checkout".<br>
+                Then choose your method of payment. <br>
+                click next and then follow the payment instructions.<br><br>
+                For more questions go <a href="https://hzuniversity.topdesk.net/">here.</a>
+            </ul>
+          </div>
+          <div class="tab-contents" id="question3">
+            <ul>
+              <li><span>How can I scan a document and send it to my laptop?</span><br><br>
+                Go to a HZ printer/scanner. <br>
+                Log in with your student ID card. <br>
+                Press scan after placing the desired document in the scanner. <br>
+                Press start. <br>
+                See question1 on how to log into the printer website. <br>
+                Download the files.
+                <br><br>
+                For more questions go <a href="https://hzuniversity.topdesk.net/">here.</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="question4">
+            <ul>
+              <li><span>How can I book a project space?</span><br><br>
+                First go to the <a href="https://hzuniversity.topdesk.net/tas/public/ssp/">Selfservice Portal</a> here.<br>
+                Then Go To Reservations and reserve a Meeting or Project Room.<br>
+                Then select the room you want and the timeslot, then click next. <br>
+                Fill in the required information then confirm your reservation.
+                <br><br>
+                For more questions go <a href="https://hzuniversity.topdesk.net/">here.</a>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="question5">
+            <ul>
+              <li><span>Where can I park my car?</span><br><br>
+                You can't park your car directly by the school. There is parking available, but only for crippled/disabled people. 
+                Instead, you can park your car at the Kousteensedijk parking place, where there are parking places for employees and students, 
+                about 8 minutes walking from here. When you show your card, you can drive in.
+                <br><br>
+                For more questions go <a href="https://hzuniversity.topdesk.net/">here.</a>
+              </li>
+            </ul>
+          
+          </div>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--this is the basic script that makes the buttons work inside this page-->
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+<!---this script allows the inputed data from the page to be sent to a google sheet document for an emailed response.-->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzQNxGNyT8CPLUzxNWUAM_tOkoZyxWiHtQIpD7Zgqf-RBgCHcyIxga-lgJF8fuyryHmEg/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>

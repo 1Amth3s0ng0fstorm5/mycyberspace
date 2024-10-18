@@ -1,0 +1,765 @@
+ /*the font setup and background*/
+ * {
+   margin: 0;
+   padding: 0;
+   font-family: 'Audiowide', sans-serif;
+   box-sizing: border-box;
+ }
+
+ body {
+   background-color: black;
+   color: whitesmoke;
+ }
+
+ /*-----------------------------------------------------------------------------------------------------------------*/
+ /*the start of the header(index) page css*/
+ #header {
+   width: 100%;
+   height: 100vh;
+   background-image: url(Images/mainbackground.jpeg);
+   background-size: cover;
+   background-position: center;
+ }
+
+ /*the header menu buttons*/
+ .container {
+   padding: 5px 5%;
+ }
+
+ nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+
+ .logo {
+   width: 140px;
+
+ }
+
+ nav ul li {
+   display: inline-block;
+   list-style: none;
+   margin: 10px 20px;
+ }
+
+ nav ul li a {
+   color: whitesmoke;
+   text-decoration: none;
+   font-size: 18px;
+   position: relative;
+ }
+
+ /*the menu button animations*/
+ nav ul li a::after {
+   content: '';
+   width: 0%;
+   height: 3px;
+   background-color: rgb(190, 220, 20);
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   transition: 0.5s;
+ }
+
+ ul li a:hover::after {
+   width: 100%;
+ }
+
+ nav ul li a#active-page::after {
+   content: '';
+   width: 50%;
+   height: 3px;
+   background-color: rgb(190, 220, 20);
+   position: absolute;
+   left: 0;
+   bottom: -6px;
+   transition: 0.5s;
+ }
+
+ nav ul li a#active-page:hover::after {
+   width: 100%;
+ }
+
+ /*the main page title text and color*/
+ .header-text {
+   margin-top: 7%;
+   font-size: 30px;
+ }
+
+ .header-text h1 {
+   font-size: 60px;
+   margin-top: 20px;
+ }
+
+ .header-text h1 span {
+   color: rgb(220, 20, 20);
+ }
+
+ /*------------------------------------------------------------------------------------------------------------------------*/
+ /*the about page css beginning*/
+ #about {
+   width: 100%;
+   height: 100vh;
+   background-image: url(/styles/Images/aboutbackground.jpeg);
+   background-size: cover;
+   background-position: center;
+   padding: 80px 0;
+   color: rgb(255, 255, 255);
+ }
+
+ /*moving the text data from below the image to its right side*/
+ .row {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+
+ /*everything in col-1 effect the left collumn of the about page which is just the image.*/
+ .about-col-1 {
+   flex-basis: 35%;
+ }
+
+ .about-col-1 img {
+   width: 100%;
+   border: 5px outset rgba(199, 43, 43, 0.411);
+ }
+
+ /*everything in col-2 effects collumn 2 or just the text in the right side.*/
+ .about-col-2 {
+   flex-basis: 60%;
+   background: rgba(97, 13, 13, 0.37);
+   border: 5px outset rgba(97, 13, 13, 0.37);
+ }
+
+ .sub-title {
+   font-size: 60px;
+   font-weight: 600;
+   color: rgb(220, 20, 20);
+ }
+
+ /*this section codes for the sub buttons and sub text in the about page.*/
+ .tab-titles {
+   display: flex;
+   margin: 20px 0 40px;
+ }
+
+ .tab-links {
+   margin-right: 50px;
+   font-size: 18px;
+   font-weight: 500;
+   cursor: pointer;
+   position: relative;
+ }
+
+ .tab-links::after {
+   content: '';
+   width: 0;
+   height: 3px;
+   background: rgb(220, 20, 20);
+   position: absolute;
+   left: 0;
+   bottom: -8px;
+   transition: 0.5s;
+ }
+
+ .tab-links.active-link::after {
+   width: 50%;
+ }
+
+ .tab-contents ul li {
+   list-style: none;
+   margin: 10px 0;
+ }
+
+ .tab-contents ul li span {
+   color: rgb(220, 20, 20);
+   font-size: 20px;
+ }
+
+ .tab-contents {
+   display: none;
+ }
+
+ .tab-contents.active-tab {
+   display: block;
+   transition: 0.5s;
+ }
+
+ /*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+ /*the Dashboard page css beginning*/
+ #dashboard {
+   width: 100%;
+   height: 100vh;
+   background-image: url(/styles/Images/dashboardbackground.jpg);
+   background-size: cover;
+   background-position: center;
+   padding: 80px 0;
+   color: rgb(255, 255, 255);
+ }
+
+ /*moving the text data from below the image to its right side*/
+
+ /*.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}*/
+
+ /*everything in col-1 effect the left collumn of the about page which is just the image.*/
+
+ /*.dashboard-col-1{  
+    flex-basis: 35%;
+}*/
+
+ .dashboard-col-1 img {
+   width: 70%;
+   height: 90%;
+   border: 5px outset rgba(199, 43, 43, 0.411);
+ }
+
+ /*everything in col-2 effects collumn 2 or just the text in the right side.*/
+ .dashboard-col-2 {
+   /*flex-basis: 50%;*/
+   background: rgba(97, 13, 13, 0.37);
+   border: 5px outset rgba(97, 13, 13, 0.37);
+ }
+
+ .sub-title {
+   font-size: 40px;
+   font-weight: 600;
+   color: rgb(220, 20, 20);
+ }
+
+ /*this section codes for the sub buttons and sub text in the about page.*/
+ .tab-titles {
+   display: flex;
+   margin: 10px 0 20px;
+ }
+
+ .tab-links {
+   margin-right: 40px;
+   font-size: 18px;
+   font-weight: 400;
+   cursor: pointer;
+   position: relative;
+ }
+
+ .tab-links::after {
+   content: '';
+   width: 0;
+   height: 3px;
+   background: rgb(220, 20, 20);
+   position: absolute;
+   left: 0;
+   bottom: -8px;
+   transition: 0.5s;
+ }
+
+ .tab-links.active-link::after {
+   width: 50%;
+ }
+
+ .tab-contents ul li {
+   list-style: none;
+   margin: 10px 0;
+ }
+
+ .tab-contents ul li span {
+   color: rgb(220, 20, 20);
+   font-size: 20px;
+ }
+
+ .tab-contents {
+   display: none;
+ }
+
+ .tab-contents.active-tab {
+   display: block;
+   transition: 0.5s;
+ }
+
+ .tab-contents img {
+   width: 50%;
+   height: 50%;
+ }
+
+ #table {
+   background-color: rgba(21, 13, 97, 0.37);
+   border: 5px outset rgba(19, 13, 97, 0.37);
+ }
+
+ /*----------------------------------------------------------------------------------------------------------------*/
+
+ /*this is the start of the portfolio or blog-post zone*/
+ #portfolio {
+   background-image: url(Images/Portfoliobackground.jpg);
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+ }
+
+ .portfolio-logo {
+   background: rgba(97, 13, 13, 0.37);
+   border: 5px outset rgba(97, 13, 13, 0.37);
+   width: 240px;
+ }
+
+ /*this is where there main details of the blog links take place and the style of said blogs*/
+ #blog {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   top: 15px;
+ }
+
+ .blog-heading h3 {
+   font-size: 2.4rem;
+   color: crimson;
+   font-weight: 800;
+   text-transform: uppercase;
+   line-height: 2.4rem;
+ }
+
+ .blog-heading strong {
+   color: rgba rgb(122, 114, 34);
+   font-size: 1rem;
+   font-weight: 500;
+   letter-spacing: 0.3px;
+ }
+
+ .blog-box-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   max-width: 1050px width 90%;
+   margin-top: 50px;
+ }
+
+ .blog-box {
+   max-width: 100%;
+   width: 100%;
+   height: 100%;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   transition: all ease 0.3s;
+   position: relative;
+   top: -20px;
+ }
+
+ .blog-box:hover {
+   box-shadow: 16px 20px 50px rgba(126, 18, 18, 0.438);
+ }
+
+ .blog-box-img {
+   width: 100%;
+   height: 100%;
+   max-height: 300px;
+   overflow: hidden;
+   display: flex;
+   position: relative;
+   top: -15px;
+ }
+
+ .blog-box-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   transition: all ease 0.3s;
+ }
+
+ .blog-img-link {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(126, 18, 18, 0.438);
+   box-shadow: 2px 2px 30px rgba(19, 13, 97, 0.37);
+   animation: fade 0.3s;
+ }
+
+ .blog-box:hover .blog-box-img a {
+   display: flex;
+ }
+
+ .blog-box:hover .blog-box-img img {
+   filter: blur(3px);
+ }
+
+ @keyframes fade {
+   0% {
+     opacity: 0;
+   }
+
+   100% {
+     opacity: 1;
+   }
+ }
+
+ .blog-box-text {
+   display: flex;
+   flex-direction: column;
+   padding: 30px 10px 20px 10px;
+   position: relative;
+   top: -20px;
+ }
+
+ .blog-box-text strong,
+ .blog-box-text p {
+   color: crimson;
+   font-size: 0.9rem;
+   font-weight: 400;
+ }
+
+ .blog-box-text a {
+   font-size: 1.4rem;
+   color: white;
+   font-weight: 800;
+   line-height: 1.8rem;
+   margin: 5px 0px 10px 0px;
+ }
+
+ .blog-box-text p {
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+ }
+
+ .blog-author {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin-top: 20px;
+ }
+
+ .blog-author-img {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-right: 10px;
+ }
+
+ .blog-author-img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+ }
+
+ .blog-author-text {
+   display: flex;
+   flex-direction: column;
+
+ }
+
+ .blog-author-text strong {
+   color: crimson;
+   font-weight: 800;
+ }
+
+ .blog-author-text span {
+   /*color: rgba(0, 0, 0, 0);*/
+   font-size: 0.8rem;
+   font-weight: 500;
+ }
+
+ /*blog page response improvements*/
+ @media(max-width: 920px) {
+   .blog-box-container {
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 10px 0px;
+   }
+ }
+
+ @media(max-width: 600px) {
+   .blog-box-container {
+     grid-template-columns: 1fr;
+   }
+
+   .blog-heading h3 {
+     font-size: 1.6rem;
+     line-height: 1.6rem;
+   }
+ }
+ /*--------------------------------------------------------------------------------------------------------------------*/
+
+ /*this is the blog post CSS data*/
+ #blog1{
+  width: 100%;
+  height: 100vh;
+  background-image: url(/styles/Images/Blogpostbackground.png);
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: rgb(255, 255, 255);
+}
+
+/*moving the text data from below the image to its right side*/
+
+/*.row{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}*/
+
+/*everything in col-1 effect the left collumn of the about page which is just the image.*/
+
+/*.dashboard-col-1{  
+   flex-basis: 35%;
+}*/
+
+.dashboard-col-1 img {
+  width: 70%;
+  height: 90%;
+  border: 5px outset rgba(199, 43, 43, 0.411);
+}
+
+/*everything in col-2 effects collumn 2 or just the text in the right side.*/
+.dashboard-col-2 {
+  /*flex-basis: 50%;*/
+  background: rgba(97, 13, 13, 0.37);
+  border: 5px outset rgba(97, 13, 13, 0.37);
+}
+
+.sub-title {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(220, 20, 20);
+}
+
+/*this section codes for the sub buttons and sub text in the about page.*/
+.tab-titles {
+  display: flex;
+  margin: 10px 0 20px;
+}
+
+.tab-links {
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgb(220, 20, 20);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: rgb(220, 20, 20);
+  font-size: 20px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+  transition: 0.5s;
+}
+
+.tab-contents img {
+  width: 50%;
+  height: 50%;
+}
+
+#table {
+  background-color: rgba(21, 13, 97, 0.37);
+  border: 5px outset rgba(19, 13, 97, 0.37);
+}
+ /*--------------------------------------------------------------------------------------------------------------------*/
+
+ /*this is the FAQ & Contact page CSS data*/
+ #FAQ{
+  width: 100%;
+  height: 100vh;
+  background-image: url(/styles/Images/FAQ&Contactbackground.gif);
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: rgb(255, 255, 255);
+}
+
+/*moving the text data from below the image to its right side*/
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*everything in col-1 effect the left collumn of the about page which is just the image.*/
+.about-col-1 {
+  flex-basis: 35%;
+  width: 100%;
+  border: 5px outset rgba(199, 43, 43, 0.411);
+}
+
+/*.about-col-1 img {
+
+}*/
+
+/*everything in col-2 effects collumn 2 or just the text in the right side.*/
+.about-col-2 {
+  flex-basis: 60%;
+  background: rgba(97, 13, 13, 0.37);
+  border: 5px outset rgba(97, 13, 13, 0.37);
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: rgb(220, 20, 20);
+}
+
+/*this section codes for the sub buttons and sub text in the about page.*/
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgb(220, 20, 20);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: rgb(220, 20, 20);
+  font-size: 20px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+  transition: 0.5s;
+}
+/*this is where the contact CSS data will go as part of the FAQ & Contact CSS*/
+.contact-left p{
+  flex-basis: 35%;
+}
+.contact-right{
+  flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+  }
+.contact-left p i{
+    color: crimson;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+  margin-top: 30px;
+}
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: bisque;
+  display: inline-block;
+}
+#button1:hover{
+ color:  rgb(160, 21, 21);
+ box-shadow: 16px 20px 50px rgba(211, 9, 9, 0.438);
+ transform: translateY(-5px);
+ transition: transform 0.5s;
+}
+#button2:hover{
+  color:  rgb(173, 24, 24);
+  box-shadow: 16px 20px 50px rgba(211, 9, 9, 0.438);
+  transform: translateY(-5px);
+  transition: transform 0.5s;
+ }
+
+.btn.btn2{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid crimson;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  background: rgba(0, 0, 0, 0.568);
+  transition: background 0.5s;
+}
+.btn.btn2:hover{
+  background: crimson;
+}
+.contact-right form{
+  width: 100%;
+
+}
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: rgba(255, 0, 0, 0.171);
+  padding: 15px;
+  margin: 15px 0;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+}
+form .btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>about Greg</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link rel="stylesheet" href="styles\style.css">
+  <!--this is the image ripository used for all web images "Font Awesome cdn repository"-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!--this is the about text thread plus its image-->
+  <div id="about">
+    <div class="container">
+      <nav>
+        <img src="styles\Images\hz-university-of-applied-sciences.png" class="logo">
+        <ul>
+          <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+          <li><a id="active-page" href="http://127.0.0.1:5500/about.html">About</a></li>
+          <li><a href="http://127.0.0.1:5500/dashboard.html">Dashboard</a></li>
+          <li><a href="http://127.0.0.1:5500/Portfolio.html">Portfolio</a></li>
+          <li><a href="http://127.0.0.1:5500/FAQ&Contact.html">FAQ&Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="row">
+        <div class="about-col-1">
+          <img src="styles/Images/PFP.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title"><span>About me.</span></h1>
+          <p class="paragraph">
+            <br>My name is Greg C. Anderson i was born October 16th, 1997
+            and i am currently a single male, i was raised in Houston, TX near the nasa space center.
+            i love most food you put in front of me but i have a preference to asian and mediterranean food.<br><br>
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('motivation')">Motivation</p>
+            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+          </div>
+          <div class="tab-contents active-tab" id="motivation">
+            <ul>
+              <li><span>How I chose ICT</span><br><br>
+                I joined this course because of a background with an ICT
+                professional for a father, as a result I grew up around coders and wished to pursue coding to design an
+                indie game.
+                This dream to make the newer generation smile with something I had made is what propels me foreward
+                even when the path is dark.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="skills">
+            <ul>
+              <li><span>my skillset</span><br><br>
+                The programing I started with was the langauge Python in which I coded for about 2 years, following this
+                I started C++
+                which began my second language. Then what started me down game design and more specifically indie game
+                design was electronic
+                music production of which i have 4 years of experience.
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="hobbies">
+            <ul>
+              <li><span>my hobbies</span><br><br>
+                For my hobbies I love; gaming, electronic music production, coding, inline skating, free diving, biking,
+                and karaokeing.
+              </li>
+            </ul>
+          </div>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--this is the basic script that makes the buttons work inside this page-->
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+
+</body>
+
+</html>
