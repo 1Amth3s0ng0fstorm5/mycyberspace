@@ -105,8 +105,7 @@
    background-image: url(Images/aboutbackground.jpeg);
    background-size: cover;
    background-position: center;
-   padding: 80px 0;
-   color: rgb(255, 255, 255);
+   
  }
 
  /*moving the text data from below the image to its right side*/
