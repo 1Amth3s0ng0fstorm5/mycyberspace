@@ -102,7 +102,7 @@
  #about {
    width: 100%;
    height: 100vh;
-   background-image: url(/styles/Images/aboutbackground.jpeg);
+   background-image: url(Images/aboutbackground.jpeg);
    background-size: cover;
    background-position: center;
    padding: 80px 0;
@@ -193,7 +193,7 @@
  #dashboard {
    width: 100%;
    height: 100vh;
-   background-image: url(/styles/Images/dashboardbackground.jpg);
+   background-image: url(Images/dashboardbackground.jpg);
    background-size: cover;
    background-position: center;
    padding: 80px 0;
@@ -501,7 +501,7 @@
  #blog1{
   width: 100%;
   height: 100vh;
-  background-image: url(/styles/Images/Blogpostbackground.png);
+  background-image: url(Images/Blogpostbackground.png);
   background-size: cover;
   background-position: center;
   padding: 80px 0;
@@ -604,7 +604,7 @@
  #FAQ{
   width: 100%;
   height: 100vh;
-  background-image: url(/styles/Images/FAQ&Contactbackground.gif);
+  background-image: url(Images/FAQ&Contactbackground.gif);
   background-size: cover;
   background-position: center;
   padding: 80px 0;
